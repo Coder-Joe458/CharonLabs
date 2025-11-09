@@ -154,10 +154,10 @@ export default function LandingPage() {
               className="object-contain opacity-100"
             />
             <Image
-              src="/images/Amazon.svg"
-              alt="Amazon"
-              width={65}
-              height={25}
+              src="/images/Circle.svg"
+              alt="Circle"
+              width={50}
+              height={50}
               className="object-contain opacity-100"
             />
             <Image
@@ -168,17 +168,17 @@ export default function LandingPage() {
               className="object-contain opacity-100"
             />
             <Image
+              src="/images/Amazon.svg"
+              alt="Amazon"
+              width={65}
+              height={25}
+              className="object-contain opacity-100"
+            />
+            <Image
               src="/images/Salesforce.svg"
               alt="Salesforce"
               width={80}
               height={30}
-              className="object-contain opacity-100"
-            />
-            <Image
-              src="/images/Circle.svg"
-              alt="Circle"
-              width={50}
-              height={50}
               className="object-contain opacity-100"
             />
           </div>
