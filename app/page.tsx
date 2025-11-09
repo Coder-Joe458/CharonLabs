@@ -64,16 +64,16 @@ export default function LandingPage() {
             </div>
           ) : (
             <button
-              onClick={() => window.open('https://discord.gg/your-invite-link', '_blank')}
+              onClick={() => window.open('https://discord.gg/aA6bUFPJ9n', '_blank')}
               className="flex items-center gap-2 bg-transparent hover:opacity-80 transition-opacity"
             >
-              <span className="font-inria-sans" style={{ color: '#C2C2C2', fontSize: '20px', fontWeight: 700, lineHeight: 'normal' }}>Join Early User Community</span>
+              <span className="font-inria-sans" style={{ color: '#C2C2C2', fontSize: '20px', fontWeight: 700, lineHeight: 'normal' }}>Join Community</span>
               <Image
                 src="/images/Discord.svg"
                 alt="Discord"
-                width={24}
-                height={24}
-                className="object-contain"
+                width={28}
+                height={28}
+                className="object-contain translate-y-[2px]"
               />
             </button>
           )}
