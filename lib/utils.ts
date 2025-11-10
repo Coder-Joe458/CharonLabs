@@ -5,3 +5,8 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
+export function assetPath(path: string): string {
+  const basePath = process.env.NODE_ENV === 'production' ? '/CharonLabs' : ''
+  return `${basePath}${path}`
+}
+

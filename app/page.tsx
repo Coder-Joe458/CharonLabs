@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { useAuth } from '@/contexts/AuthContext';
 import { AuthModal } from '@/components/shared/AuthModal';
 import { Button } from '@/components/ui/button';
+import { assetPath } from '@/lib/utils';
 
 export default function LandingPage() {
   const router = useRouter();
@@ -69,7 +70,7 @@ export default function LandingPage() {
             >
               <span className="font-inria-sans" style={{ color: '#C2C2C2', fontSize: '20px', fontWeight: 700, lineHeight: 'normal' }}>Join Community</span>
               <Image
-                src="/images/Discord.svg"
+                src={assetPath("/images/Discord.svg")}
                 alt="Discord"
                 width={28}
                 height={28}
@@ -98,7 +99,7 @@ export default function LandingPage() {
           {/* Logo */}
           <div className="flex flex-row items-end justify-center gap-4 mb-8">
             <Image 
-              src="/images/charon_logo.png" 
+              src={assetPath("/images/charon_logo.png")} 
               alt="Charon Logo" 
               width={180}
               height={180}
@@ -147,35 +148,35 @@ export default function LandingPage() {
           <div className="text-base font-bold mb-5 tracking-[0.15em] font-inria-sans" style={{ color: '#C2C2C2' }}>Built By</div>
           <div className="flex justify-center items-center gap-10 flex-wrap">
             <Image
-              src="/images/Goldman_Sachs.svg"
+              src={assetPath("/images/Goldman_Sachs.svg")}
               alt="Goldman Sachs"
               width={65}
               height={25}
               className="object-contain opacity-100"
             />
             <Image
-              src="/images/Circle.svg"
+              src={assetPath("/images/Circle.svg")}
               alt="Circle"
               width={50}
               height={50}
               className="object-contain opacity-100"
             />
             <Image
-              src="/images/J_P_Morgan.svg"
+              src={assetPath("/images/J_P_Morgan.svg")}
               alt="J.P. Morgan"
               width={80}
               height={30}
               className="object-contain opacity-100"
             />
             <Image
-              src="/images/Amazon.svg"
+              src={assetPath("/images/Amazon.svg")}
               alt="Amazon"
               width={65}
               height={25}
               className="object-contain opacity-100"
             />
             <Image
-              src="/images/Salesforce.svg"
+              src={assetPath("/images/Salesforce.svg")}
               alt="Salesforce"
               width={80}
               height={30}
