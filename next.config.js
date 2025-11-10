@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/CharonLabs',
+  basePath: process.env.NODE_ENV === 'production' ? '/CharonLabs' : '',
   images: {
     unoptimized: true,
   },

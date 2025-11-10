@@ -34,6 +34,7 @@ jobs:
       - name: Build with Next.js
         run: npm run build
         env:
+          NODE_ENV: production
           NODE_TLS_REJECT_UNAUTHORIZED: '0'
 
       - name: Upload artifact
